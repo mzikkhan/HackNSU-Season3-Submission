@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17">
+   <children>
+      <AnchorPane layoutX="-95.0" layoutY="-134.0" prefHeight="500.0" prefWidth="400.0">
+         <children>
+            <Label layoutX="166.0" layoutY="168.0" text="Ritu">
+               <font>
+                  <Font name="Brush Script MT Italic" size="96.0" />
+               </font>
+            </Label>
+            <TextField fx:id="mail" layoutX="144.0" layoutY="321.0" prefHeight="25.0" prefWidth="213.0" promptText="E-Mail" />
+            <TextField fx:id="password" layoutX="144.0" layoutY="380.0" prefHeight="25.0" prefWidth="213.0" promptText="Password" />
+            <Label layoutX="144.0" layoutY="298.0" text="E-Mail:" />
+            <Label layoutX="144.0" layoutY="356.0" text="Password :" />
+            <Button fx:id="login" layoutX="305.0" layoutY="426.0" mnemonicParsing="false" text="Login" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
