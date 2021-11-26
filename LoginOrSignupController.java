@@ -1,55 +1,41 @@
 package application;
 
-import java.io.IOException;
+import java.util.Scanner;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
+
+
 public class LoginOrSignupController {
+	private String email;
+	private String playerName;
+	private String phoneNumber;
+	private String playerPassword;
 	
-	private Stage stage;
-	private Scene scene;
-	private Parent root;
-	
+	 @FXML
+	    private Button loginButton;
 
-    @FXML
-    private Button login;
-    @FXML
-    private Button signup;
+	    @FXML
+	    private Button signupButton;
 
+	    @FXML
+	    void logIn(ActionEvent event) throws InstantiationException, IllegalAccessException {
+	    	ViewFactory showLogin=new ViewFactory();
+	    	showLogin.showView("Login.fxml");
+	    	showLogin.fooClass(LoginController.class);
+	    	Stage stage=showLogin.getStage(event);
+	    	showLogin.closeView(stage);
+	    }
 
-    @FXML
-    void Login(ActionEvent event) {
-    	try {
-			root = FXMLLoader.load(getClass().getResource("Login.fxml"));
-			stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-			scene = new Scene(root);
-			stage.setScene(scene);
-			stage.show();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-    }
-    
-    @FXML
-    void SignUp(ActionEvent event) {
-    	try {
-			root = FXMLLoader.load(getClass().getResource("CreatingNewAccount.fxml"));
-			stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-			scene = new Scene(root);
-			stage.setScene(scene);
-			stage.show();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-    }
-	
+	    @FXML
+	    void signUp(ActionEvent event) throws InstantiationException, IllegalAccessException {
+	    	ViewFactory showCreateNewAccount=new ViewFactory();
+	    	showCreateNewAccount.showView("createNewAccount.fxml");
+	    	showCreateNewAccount.fooClass(CreateNewAccountController.class);
+			Stage stage=showCreateNewAccount.getStage(event);
+			showCreateNewAccount.closeView(stage);
+	    }
 }
