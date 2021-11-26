@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="538.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FirstController">
+<AnchorPane prefHeight="538.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Task1Controller">
    <children>
       <AnchorPane layoutX="-177.0" layoutY="-175.0" prefHeight="715.0" prefWidth="595.0">
          <children>
@@ -33,7 +33,7 @@
                   <Image url="@firstB.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="ContinueButton" layoutX="466.0" layoutY="634.0" mnemonicParsing="false" onAction="#goContinue" prefHeight="31.0" prefWidth="72.0" text="Continue">
+            <Button fx:id="Continue" layoutX="466.0" layoutY="634.0" mnemonicParsing="false" onAction="#Continue" prefHeight="31.0" prefWidth="72.0" text="Continue">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>

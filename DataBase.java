@@ -10,7 +10,7 @@ import com.microsoft.sqlserver.jdbc.SQLServerException;
 
 public class DataBase {
 	
-	static String url = "jdbc:sqlserver://NIJHUMS-LEPTI;databaseName=master";
+	static String url = "jdbc:sqlserver://SHELBY-30102000;databaseName=master";
 	static String user= "Ritu";
 	static String password = "password";
 	
@@ -20,14 +20,13 @@ public class DataBase {
 	
 	
 	//Function to send data to our database
-	
 	public static void sendData(String e, String n, String Pn, String p) {
 			try {
 				Connection conn=null;
 				PreparedStatement statement=null;
 				conn = DriverManager.getConnection(url,user,password);
 	
-				String sql = "INSERT INTO player_info (Email,PlayerName,Phonenumber,PlayerPassword)"
+				String sql = "INSERT INTO player_info (Email,PlayerName,Phonenumber,Password)"
 						+ " VALUES (?,?,?,?)";
 	
 				statement = conn.prepareStatement(sql);

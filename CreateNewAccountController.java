@@ -29,7 +29,7 @@ public class CreateNewAccountController {
     @FXML
     void createAccount(ActionEvent event) throws InstantiationException, IllegalAccessException {
 		DataBase.sendData(this.emailIDField.getText(), this.playerName.getText(), this.playerPhoneNumber.getText(), this.playerPassword.getText());
-		newplayerEmail=this.emailIDField.getText();
+		//newplayerEmail=this.emailIDField.getText();
 		CreateNewAccountController.otp=generateOTP();
 		ViewFactory showVerification=new ViewFactory();
 		showVerification.showView("Verification.fxml");
@@ -37,10 +37,10 @@ public class CreateNewAccountController {
 		Stage stage=showVerification.getStage(event);
 		showVerification.closeView(stage);
 		System.out.println(CreateNewAccountController.otp);
-		SendingMail mail=new SendingMail();
-		if(mail.mailLogin()) {
-			mail.sendVerification();
-		}
+		//SendingMail mail=new SendingMail();
+		//if(mail.mailLogin()) {
+			//mail.sendVerification();
+		//}
 		
     }
     private int generateOTP() {

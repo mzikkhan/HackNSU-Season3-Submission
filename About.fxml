@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AboutAndContactController">
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AboutController">
    <children>
       <AnchorPane layoutX="-116.0" layoutY="-149.0" prefHeight="500.0" prefWidth="400.0">
          <children>
@@ -57,7 +57,7 @@
                   <Image url="@AboutAndContactB.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="BackButton" layoutX="120.0" layoutY="138.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <Button fx:id="Back" layoutX="126.0" layoutY="172.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
             <TextArea layoutX="115.0" layoutY="474.0" prefHeight="35.0" prefWidth="497.0" text="                                                          ALL RIGHTS RESERVED.">
                <font>
                   <Font name="System Bold Italic" size="12.0" />

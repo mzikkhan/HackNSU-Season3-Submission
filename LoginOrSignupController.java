@@ -34,7 +34,7 @@ public class LoginOrSignupController {
     @FXML
     void signUp(ActionEvent event) throws InstantiationException, IllegalAccessException {
     	ViewFactory showCreateNewAccount=new ViewFactory();
-    	showCreateNewAccount.showView("createNewAccount.fxml");
+    	showCreateNewAccount.showView("CreatingNewAccount.fxml");
     	showCreateNewAccount.fooClass(CreateNewAccountController.class);
 		Stage stage=showCreateNewAccount.getStage(event);
 		showCreateNewAccount.closeView(stage);

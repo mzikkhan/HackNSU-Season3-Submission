@@ -64,25 +64,15 @@ public class Task2BController {
 					  Connection conn = DriverManager.getConnection(url,user,password);
 					  
 					  Statement statement = conn.createStatement();
-				      ResultSet rs = statement.executeQuery("SELECT Name FROM pseudo");
-				      while(rs.next()) {
-				        	System.out.println(rs.getString("Name"));
-				        	if(rs.getString("Name").equals(player.getPlayerName())) {
+					  ResultSet rs = statement.executeQuery("SELECT Email,Points,Task2 FROM leaderboard");
+				      String sql = "UPDATE leaderboard SET Points=100 where Email ="+ player.getPlayerEmail();
+				      Statement stmt = conn.createStatement();
+				      stmt.executeUpdate(sql);
 				        		
-				
-				        		String sql = "UPDATE pseudo SET Points=50 where Name ="+ player.getPlayerName();
-				        		Statement stmt = conn.createStatement();
-				        		stmt.executeUpdate(sql);
-				        		
-				        		//String sql2 = "UPDATE pseudo SET task1 = '?' where Serials = '?'";
-				        		//PreparedStatement stmt2 = (PreparedStatement) conn.prepareStatement(sql2);
-				        		//stmt.execute(sql2);
-				        		
-				        		break;
-				        	}
-				      }
+				      //String sql2 = "UPDATE pseudo SET task1 = '?' where Serials = '?'";
+				      //PreparedStatement stmt2 = (PreparedStatement) conn.prepareStatement(sql2);
+				      //stmt.execute(sql2);
 					  
-					  conn.close();
 					  
 				  } catch (SQLException e) {
 					  e.printStackTrace();

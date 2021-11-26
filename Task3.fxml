@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ThirdController">
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Task3Controller">
    <children>
       <AnchorPane layoutX="-170.0" layoutY="-175.0" prefHeight="652.0" prefWidth="607.0">
          <children>
@@ -23,8 +23,8 @@
                   <Image url="@third.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="BackButton" layoutX="180.0" layoutY="184.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
-            <Button fx:id="ContinueButton" layoutX="543.0" layoutY="611.0" mnemonicParsing="false" onAction="#goContinue" text="Continue" />
+            <Button fx:id="Back" layoutX="180.0" layoutY="184.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <Button fx:id="Continue" layoutX="543.0" layoutY="611.0" mnemonicParsing="false" onAction="#Continue" text="Continue" />
             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="167.0" layoutY="195.0" prefHeight="57.0" prefWidth="431.0" text="Task 3">
                <font>
                   <Font name="Brush Script MT Italic" size="72.0" />

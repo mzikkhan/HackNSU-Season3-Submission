@@ -64,13 +64,13 @@ public class Task1BController {
 					  Connection conn = DriverManager.getConnection(url,user,password);
 					  
 					  Statement statement = conn.createStatement();
-				      ResultSet rs = statement.executeQuery("SELECT Email,Points,Task1 FROM player_info");
+				      ResultSet rs = statement.executeQuery("SELECT Email,Points,Task1 FROM leaderboard");
 				      while(rs.next()) {
-				        	System.out.println(rs.getString("Email"));
+				        	//System.out.println(rs.getString("Email"));
 				        	if(rs.getString("Email").equals(player.getPlayerEmail())) {
 				        		
 				
-				        		String sql = "UPDATE pseudo SET Points=50 where Name ="+ player.getPlayerName();
+				        		String sql = "UPDATE leaderboard SET Points=50 where Email ="+ player.getPlayerEmail();
 				        		Statement stmt = conn.createStatement();
 				        		stmt.executeUpdate(sql);
 				        		
