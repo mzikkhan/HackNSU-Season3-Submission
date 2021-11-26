@@ -11,14 +11,14 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Task3BController">
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ThirdBController">
    <children>
       <AnchorPane layoutX="-184.0" layoutY="-181.0" prefHeight="622.0" prefWidth="600.0">
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" />
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="184.0" layoutY="269.0" prefHeight="49.0" prefWidth="416.0" text="COUNTER">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="184.0" layoutY="269.0" prefHeight="49.0" prefWidth="416.0" text="24:00:00">
                <font>
-                  <Font size="25.0" />
+                  <Font name="System Bold Italic" size="25.0" />
                </font>
             </Label>
             <Label layoutX="227.0" layoutY="372.0" prefHeight="49.0" prefWidth="262.0" text="Paste your link below:">
@@ -47,8 +47,8 @@
                   <Image url="@third.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="Back" layoutX="199.0" layoutY="192.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
-            <Button fx:id="Continue" layoutX="492.0" layoutY="485.0" mnemonicParsing="false" onAction="#Submit" text="Continue" />
+            <Button fx:id="BackButton" layoutX="199.0" layoutY="192.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <Button fx:id="ContinueButton" layoutX="498.0" layoutY="485.0" mnemonicParsing="false" onAction="#goContinue" text="Continue" />
             <Button fx:id="Save" layoutX="447.0" layoutY="485.0" mnemonicParsing="false" onAction="#getLink" text="Save" />
             <TextField fx:id="Link" layoutX="227.0" layoutY="422.0" onAction="#getLink" prefHeight="33.0" prefWidth="330.0" promptText="paste your link" />
          </children>
