@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17">
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
    <children>
       <AnchorPane layoutX="-95.0" layoutY="-134.0" prefHeight="500.0" prefWidth="400.0">
          <children>
@@ -20,7 +19,7 @@
             <TextField fx:id="password" layoutX="144.0" layoutY="380.0" prefHeight="25.0" prefWidth="213.0" promptText="Password" />
             <Label layoutX="144.0" layoutY="298.0" text="E-Mail:" />
             <Label layoutX="144.0" layoutY="356.0" text="Password :" />
-            <Button fx:id="login" layoutX="305.0" layoutY="426.0" mnemonicParsing="false" text="Login" />
+            <Button fx:id="login" layoutX="305.0" layoutY="426.0" mnemonicParsing="false" onAction="#logIN" text="Login" />
          </children>
       </AnchorPane>
    </children>

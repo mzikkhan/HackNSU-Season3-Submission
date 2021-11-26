@@ -12,7 +12,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			ViewFactory showloginorsignup =new ViewFactory();
-			showloginorsignup.showView("LoginOrSignup.fxml");
+			showloginorsignup.showView("Task1.fxml");
 			showloginorsignup.fooClass(LoginOrSignupController.class);
 			
 		} catch(Exception e) {
