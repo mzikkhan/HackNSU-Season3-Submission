@@ -11,7 +11,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Task1BController">
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FirstBController">
    <children>
       <AnchorPane layoutX="-170.0" layoutY="-175.0" prefHeight="649.0" prefWidth="600.0">
          <children>
@@ -35,7 +35,7 @@
                   <Image url="@firstB.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="Back" layoutX="186.0" layoutY="186.0" mnemonicParsing="false" onAction="#goBack" text="Back">
+            <Button fx:id="BackButton" layoutX="186.0" layoutY="186.0" mnemonicParsing="false" onAction="#goBack" text="Back">
                <textFill>
                   <RadialGradient centerX="0.5111111111111111" proportional="false" radius="0.5">
                      <stops>
@@ -60,7 +60,7 @@
                   <Font name="Bookman Old Style Bold Italic" size="15.0" />
                </font>
             </TextField>
-            <Button fx:id="ContinueButton" layoutX="487.0" layoutY="534.0" mnemonicParsing="false" onAction="#Submit" text="Continue">
+            <Button fx:id="ContinueButton" layoutX="487.0" layoutY="534.0" mnemonicParsing="false" onAction="#goContinue" text="Continue">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font>
