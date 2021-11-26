@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AboutAndContactController">
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AboutController">
    <children>
       <AnchorPane layoutX="-116.0" layoutY="-135.0" prefHeight="500.0" prefWidth="400.0">
          <children>
@@ -16,7 +16,7 @@
                   <Font name="Bell MT Bold" size="32.0" />
                </font>
             </Label>
-            <Button fx:id="BackButton" layoutX="120.0" layoutY="138.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <Button fx:id="Back" layoutX="120.0" layoutY="138.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
             <TextArea editable="false" layoutX="114.0" layoutY="255.0" prefHeight="47.0" prefWidth="494.0" text="                        Ritu">
                <font>
                   <Font name="Brush Script MT Italic" size="30.0" />

@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<AnchorPane prefHeight="520.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LaederboardController">
+   <children>
+      <AnchorPane layoutX="-108.0" layoutY="-267.0" prefHeight="710.0" prefWidth="549.0">
+         <children>
+            <Label layoutX="242.0" layoutY="309.0" prefHeight="66.0" prefWidth="231.0" text="Leaderboard">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="Image" fitHeight="358.0" fitWidth="327.0" layoutX="160.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="Back" layoutX="134.0" layoutY="283.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
-
