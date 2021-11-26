@@ -15,27 +15,29 @@ public class LoginOrSignupController {
 	private String phoneNumber;
 	private String playerPassword;
 	
+	
 	@FXML
-	private Button loginButton;
+    private Button loginButton;
 
-	@FXML
-	private Button signupButton;
+    @FXML
+    private Button signUpbutton;
 
-	@FXML
-	void logIn(ActionEvent event) throws InstantiationException, IllegalAccessException {
-	    ViewFactory showLogin=new ViewFactory();
-	    showLogin.showView("Login.fxml");
-	    showLogin.fooClass(LoginController.class);
-	    Stage stage=showLogin.getStage(event);
-	    showLogin.closeView(stage);
-	}
+    @FXML
+    void login(ActionEvent event) throws InstantiationException, IllegalAccessException {
+    	ViewFactory showLogin=new ViewFactory();
+    	showLogin.showView("Login.fxml");
+    	showLogin.fooClass(LoginController.class);
+    	Stage stage=showLogin.getStage(event);
+    	showLogin.closeView(stage);
+    }
 
-	@FXML
-	void signUp(ActionEvent event) throws InstantiationException, IllegalAccessException {
-		ViewFactory showCreateNewAccount=new ViewFactory();
-	    showCreateNewAccount.showView("createNewAccount.fxml");
-	    showCreateNewAccount.fooClass(CreateNewAccountController.class);
+    @FXML
+    void signUp(ActionEvent event) throws InstantiationException, IllegalAccessException {
+    	ViewFactory showCreateNewAccount=new ViewFactory();
+    	showCreateNewAccount.showView("createNewAccount.fxml");
+    	showCreateNewAccount.fooClass(CreateNewAccountController.class);
 		Stage stage=showCreateNewAccount.getStage(event);
 		showCreateNewAccount.closeView(stage);
-	}
+    }
+	
 }

@@ -11,9 +11,8 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			
 			ViewFactory showloginorsignup =new ViewFactory();
-			showloginorsignup.showView("Game.fxml");
+			showloginorsignup.showView("LoginOrSignup.fxml");
 			showloginorsignup.fooClass(LoginOrSignupController.class);
 			
 		} catch(Exception e) {
