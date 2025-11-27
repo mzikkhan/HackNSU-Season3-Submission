@@ -6,7 +6,7 @@ This project comprises a mobile application designed to promote environmental aw
 designed to help fight climate change, e.g - plant a tree, replace filament bulb with energy-saving bulb, recycle plastic bottles. Our prize winning proposal was that if we give ordinary citizens a competetive 
 incentive to act sustainably then we could generate greater environmental awareness.
 
-I have worked on this project with my teammates Absara Chowdhury, Farhan Ishrak Tahmid, and Nijhum Tanha.
+I have worked on this project with my teammates Farhan Ishrak Tahmid and Nijhum Tanha.
 
 We ranked 1st in the Hackathon.
 
